@@ -1,0 +1,111 @@
+/* ---------- GLOBAL STYLING ---------- */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e8f1fa;
+  color: #0d1b2a;
+  margin: 0;
+  padding: 20px;
+}
+/* ---------- HEADERS ---------- */
+h1, h2, h3 {
+  color: #1b4d89;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #a9c7e8;
+}
+
+/* ---------- MAIN CONTENT ---------- */
+.main-content {
+  margin-bottom: 20px;
+}
+
+/* ---------- ASIDE ---------- */
+aside {
+  background-color: #d6e6f7;
+  padding: 15px;
+  border-left: 5px solid #1b4d89;
+  margin: 20px 0;
+}
+
+/* ---------- LISTS ---------- */
+ul, ol {
+  padding-left: 30px;
+  color: #123a63;
+}
+
+/* ---------- TABLE ---------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid #1b4d89;
+}
+
+th, td {
+  padding: 10px;
+  background-color: #edf4fc;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  margin-top: 40px;
+  padding: 15px;
+  background-color: #b7d4f0;
+  text-align: center;
+  color: #0d1b2a;
+}
+
+/* ---------- NAVIGATION ---------- */
+nav {
+  background-color: #b7d4f0;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #0d1b2a;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #1b4d89;
+  text-decoration: underline;
+}
+
+/* ---------- IMAGE STYLING ---------- */
+.gallery-img {
+  width: 30%;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.image-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.about-img, .contact-img {
+  width: 25%;
+  display: block;
+  margin: 0 auto 10px auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.about-img:hover {
+  transform: scale(1.05);
+}
+
