@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<header>
+    <h1>Materialize</h1>
+</header>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Materialize – Sydney Stusek Photography</title>
+    <link rel="stylesheet" href="styles.css">
+     <script src="script.js" defer></script>
+
+
+<nav>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutme.html">About Me</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="materialize.html">Materialize</a></li>
+    </ul>
+</nav>
+
+   <!-- Materialize CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+   <!-- Material Icons -->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+   <style>
+       body {
+           background-color: #e8f1fa;
+           color: #0d1b2a;
+           font-family: Arial, sans-serif;
+       }
+
+       nav {
+           background-color: #b7d4f0 !important;
+       }
+
+       nav a {
+           color: #0d1b2a !important;
+           font-weight: bold;
+       }
+
+       nav a:hover {
+           color: #1b4d89 !important;
+           text-decoration: underline;
+       }
+
+     .hero {
+    background: url('images/Screenshot 2024-06-07 154815.png') bottom/cover no-repeat;
+    height: 30vh;          
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;             /* adds breathing room */
+}
+
+.hero h1 {
+    background: rgba(13, 27, 42, 0.55);
+    padding: 12px 28px;
+    color: white;
+    border-radius: 6px;
+    font-size: 2rem;           /* slightly smaller text */
+    border-bottom: 2px solid #a9c7e8;
+}
+
+
+       h2, h3 {
+           color: #1b4d89;
+           border-bottom: 2px solid #a9c7e8;
+           padding-bottom: 6px;
+       }
+
+       .section-light {
+           background-color: #edf4fc;
+           padding: 40px 0;
+       }
+
+       .section-mid {
+           background-color: #d6e6f7;
+           padding: 40px 0;
+       }
+
+       .section-dark {
+           background-color: #0d1b2a;
+           color: white;
+           padding: 40px 0;
+       }
+
+       .circle-img {
+           width: 200px;
+           height: 200px;
+           object-fit: cover;
+       }
+
+       .card {
+           background-color: #edf4fc;
+           border: 1px solid #1b4d89;
+       }
+
+       .card-title {
+           color: #1b4d89 !important;
+       }
+
+       footer {
+           background-color: #b7d4f0 !important;
+           color: #0d1b2a !important;
+           padding: 20px 0;
+       }
+       body {
+    background-color: #e8f1fa;
+    color: #0d1b2a;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #b7d4f0 !important;
+}
+
+nav a {
+    color: #0d1b2a !important;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #1b4d89 !important;
+    text-decoration: underline;
+}
+
+/* Unified Heading Style */
+h1, h2, h3 {
+    color: #1b4d89;
+    font-weight: bold;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #a9c7e8;
+}
+
+.section-light {
+    background-color: #edf4fc;
+    padding: 40px 0;
+}
+
+.section-mid {
+    background-color: #d6e6f7;
+    padding: 40px 0;
+}
+
+.section-dark {
+    background-color: #0d1b2a;
+    color: white;
+    padding: 40px 0;
+}
+
+.circle-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card {
+    background-color: #edf4fc;
+    border: 1px solid #1b4d89;
+}
+
+.card-title {
+    color: #1b4d89 !important;
+}
+
+footer {
+    background-color: #b7d4f0 !important;
+    color: #0d1b2a !important;
+    padding: 20px 0;
+}
+
+   </style>
+</head>
+
+<body>
+
+   <!-- HERO -->
+   <div class="hero">
+       <h1>Photogtaphy Design Showcase</h1>
+   </div>
+
+   <!-- ABOUT SECTION -->
+   <div class="section-light">
+       <div class="container">
+           <div class="row">
+               <div class="col s12 m6">
+                   <h3>Photography as a Way of Seeing</h3>
+                   <p>
+                    Photography is more than freezing a moment, it’s a way of noticing the 
+                    details most people pass by. Light, expression, movement, and emotion all come together 
+                    in a fraction of a second, and the camera becomes a tool for telling stories that words 
+                    can’t fully capture. Every portrait, sports frame, or candid moment reflects a unique blend of 
+                    timing, intuition, and connection with the subject.
+                   </p>
+               </div>
+               <div class="col s12 m6 center-align">
+                   <img src="images/IMG_7714.jpg" class="responsive-img z-depth-3" alt="Photography Example">
+               </div>
+           </div>
+       </div>
+   </div>
+
+   <!-- CIRCULAR IMAGE -->
+   <div class="section-mid center-align">
+       <h3>Featured Portrait</h3>
+       <img src="images/IMG_1029.jpg" class="circle responsive-img circle-img z-depth-4" alt="Circular Portrait">
+       <p style="color:#123a63;">A portrait becomes powerful when it captures more than a face, it
+        reveals a feeling, a story, or a quiet truth about the person in front of the lens.</p>
+   </div>
+   
+
+   <!-- VIDEO EMBED -->
+   <div class="section-light">
+       <div class="container">
+           <h3 class="center-align">Behind the Scenes</h3>
+           <div class="video-container">
+               <iframe width="853" height="480" src="https://www.youtube.com/embed/V7z7BAZdt2M" frameborder="0" allowfullscreen></iframe>
+            </div>
+           <p class="center-align" style="color:#123a63;">A behind‑the‑scenes look at portrait photography inspiration.</p>
+       </div>
+   </div>
+
+   <!-- PHOTO GRID -->
+   <div class="section">
+       <div class="container">
+           <h3 class="center-align">Photography Highlights</h3>
+           <div class="row">
+
+               <div class="col s12 m4">
+                   <div class="card">
+                       <div class="card-image">
+                           <img src="images/IMG_5024.jpg">
+                       </div>
+                       <div class="card-content">
+                           <span class="card-title">Sports Photography</span>
+                           <p>Capturing action, emotion, and intensity in every moment.</p>
+                       </div>
+                   </div>
+               </div>
+
+               <div class="col s12 m4">
+                   <div class="card">
+                       <div class="card-image">
+                           <img src="images/IMG_9029.jpg">
+                       </div>
+                       <div class="card-content">
+                           <span class="card-title">Portrait Work</span>
+                           <p>Natural lighting and authentic expression define my style.</p>
+                       </div>
+                   </div>
+               </div>
+
+               <div class="col s12 m4">
+                   <div class="card">
+                       <div class="card-image">
+                           <img src="images/IMG_7356.jpg">
+                       </div>
+                       <div class="card-content">
+                           <span class="card-title">Event Coverage</span>
+                           <p>Documenting real stories through candid, meaningful moments.</p>
+                       </div>
+                   </div>
+               </div>
+
+           </div>
+       </div>
+   </div>
+
+   <!-- FOOTER -->
+   <footer class="page-footer">
+       <div class="container center-align">
+           <p>&copy; 2026 Sydney Stusek Photography</p>
+       </div>
+   </footer>
+
+   <!-- Materialize JS -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</body>
+</html>
