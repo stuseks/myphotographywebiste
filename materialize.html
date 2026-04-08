@@ -49,7 +49,7 @@
        }
 
      .hero {
-    background: url('Screenshot 2024-06-07 154815.png') bottom/cover no-repeat;
+    background: url('images/Screenshot 2024-06-07 154815.png') bottom/cover no-repeat;
     height: 30vh;          
     display: flex;
     align-items: center;
@@ -130,7 +130,7 @@ nav a:hover {
 }
 
 /* Unified Heading Style */
-h1, h2, h3 {
+h1, h2, h3,h4 {
     color: #1b4d89;
     font-weight: bold;
     padding-bottom: 6px;
@@ -185,6 +185,37 @@ footer {
        <h1>Photogtaphy Design Showcase</h1>
    </div>
 
+<body>
+  <!-- CAROUSEL SECTION -->
+  <div class="section container">
+    <h4>Featured Photography</h4>
+
+    <div class="carousel">
+      <a class="carousel-item" href="#one"><img src="images/IMG_0480.jpg"></a>
+      <a class="carousel-item" href="#two"><img src="images/IMG_1199.jpg"></a>
+      <a class="carousel-item" href="#three"><img src="images/IMG_0016.jpg"></a>
+      <a class="carousel-item" href="#four"><img src="images/IMG_1351.jpg"></a>
+       <a class="carousel-item" href="#five"><img src="images/IMG_8373.jpg"></a>
+    </div>
+  </div>
+
+  <!-- MATERIALIZE JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <!-- CUSTOM JS -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Carousel
+      var carousels = document.querySelectorAll('.carousel');
+      M.Carousel.init(carousels, {
+        fullWidth: false,
+        indicators: true
+      });
+    });
+  </script>
+
+</body>
+
    <!-- ABOUT SECTION -->
    <div class="section-light">
        <div class="container">
@@ -200,7 +231,7 @@ footer {
                    </p>
                </div>
                <div class="col s12 m6 center-align">
-                   <img src="IMG_7714.jpg" class="responsive-img z-depth-3" alt="Photography Example">
+                   <img src="images/IMG_7714.jpg" class="responsive-img z-depth-3" alt="Photography Example">
                </div>
            </div>
        </div>
@@ -209,9 +240,9 @@ footer {
    <!-- CIRCULAR IMAGE -->
    <div class="section-mid center-align">
        <h3>Featured Portrait</h3>
-       <img src="IMG_1029.jpg" class="circle responsive-img circle-img z-depth-4" alt="Circular Portrait">
+       <img src="images/IMG_1029.jpg" class="circle responsive-img circle-img z-depth-4" alt="Circular Portrait">
        <p style="color:#123a63;">A portrait becomes powerful when it captures more than a face, it
-        reveals a feeling, a story, or a truth about the person in front of the lens.</p>
+        reveals a feeling, a story, or a quiet truth about the person in front of the lens.</p>
    </div>
    
 
@@ -235,7 +266,7 @@ footer {
                <div class="col s12 m4">
                    <div class="card">
                        <div class="card-image">
-                           <img src="IMG_5024.jpg">
+                           <img src="images/IMG_5024.jpg">
                        </div>
                        <div class="card-content">
                            <span class="card-title">Sports Photography</span>
@@ -247,7 +278,7 @@ footer {
                <div class="col s12 m4">
                    <div class="card">
                        <div class="card-image">
-                           <img src="IMG_9029.jpg">
+                           <img src="images/IMG_9029.jpg">
                        </div>
                        <div class="card-content">
                            <span class="card-title">Portrait Work</span>
@@ -259,7 +290,7 @@ footer {
                <div class="col s12 m4">
                    <div class="card">
                        <div class="card-image">
-                           <img src="IMG_7356.jpg">
+                           <img src="images/IMG_7356.jpg">
                        </div>
                        <div class="card-content">
                            <span class="card-title">Event Coverage</span>
@@ -284,3 +315,4 @@ footer {
 
 </body>
 </html>
+
