@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Interactions</title>
+    <link rel="stylesheet" href="styles.css">
+     <script src="script.js" defer></script>
+</head>
+
+<header>
+    <h1>jQuery</h1>
+    <h2>Welcome to my page!</h2>
+</header>
+
+<nav>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutme.html">About Me</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="materialize.html">Materialize</a></li>
+        <li><a href="jquery.html">JQuery</a></li>
+    </ul>
+</nav>
+
+
+    <!-- Your main stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <style>
+        /* Simple styling so the page looks clean */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+
+        .interaction-box {
+            padding: 20px;
+            margin-bottom: 30px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        #fadeImage {
+            width: 300px;
+            display: none; /* starts hidden for fade-in */
+            border-radius: 6px;
+        }
+
+        #slidePanel {
+            background: #f0f0f0;
+            padding: 15px;
+            display: none;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Interaction 1: Hide/Show Text -->
+    <div class="interaction-box">
+        <h2>1. Hide / Show Text</h2>
+        <button id="toggleTextBtn">Hide/Show Description</button>
+        <p id="photoDescription">
+            Photography captures moments that tell stories, lighting, emotion, and timing all matter.
+        </p>
+    </div>
+
+    <!-- Interaction 2: Fade In Image -->
+    <div class="interaction-box">
+        <h2>2. Fade In Image</h2>
+        <button id="fadeBtn">Fade In Photo</button><br><br>
+        <img id="fadeImage" src="images/IMG_1468.jpg" alt="Sports picture">
+    </div>
+
+    <!-- Interaction 3: Slide Toggle Panel -->
+    <div class="interaction-box">
+        <h2>3. Slide Toggle Info Panel</h2>
+        <button id="slideBtn">Show/Hide Panel</button>
+        <div id="slidePanel">
+            <p>Book a photo shoot or a grad session today with me!</p>
+        </div>
+    </div>
+
+    <!-- jQuery Scripts -->
+    <script>
+        // Interaction 1: Hide/Show Text
+        $("#toggleTextBtn").click(function() {
+            $("#photoDescription").toggle();
+        });
+
+        // Interaction 2: Fade In Image
+        $("#fadeBtn").click(function() {
+            $("#fadeImage").fadeIn(1000);
+        });
+
+        // Interaction 3: Slide Toggle Panel
+        $("#slideBtn").click(function() {
+            $("#slidePanel").slideToggle();
+        });
+    </script>
+
+</body>
+</html>
